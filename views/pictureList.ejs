@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        h1 {text-align: center;}
+    </style>
+    <title>Picture List</title>
+</head>
+
+<body>
+    <h1>Picture List</h1>
+    <table class = "table">
+        <thread>
+            <tr>
+                <th scope="col">Picture</th>
+                <th scope="col">Reachs</th>
+                <th scope="col">Likes</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Comments</th>
+                <th scope="col">Viral Status</th>
+            </tr>
+        </thread>
+        <tbody>
+            <% pictureLists.forEach(function (pictureList) { %>
+                <tr>
+                    <th scope="row"><%= pictureList.pictureID %></th>
+                    <td><%= pictureList.reachs %></td>
+                    <td><%= pictureList.likes %></td>
+                    <td><%= pictureList.shares %></td>
+                    <td><%= pictureList.comments %></td>
+                    <td><%= pictureList.viral %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
