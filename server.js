@@ -17,5 +17,5 @@ app.set('view engine', 'ejs')
 //
 
 app.listen(8000, () => {
-    console.log('Application running')
+    console.log('Application running test')
   })
